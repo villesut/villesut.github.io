@@ -31,6 +31,10 @@
 			var material =  new THREE.MeshBasicMaterial( { color: 0x1BD8EA, wireframe: true  }  );
 			var cube2 = new THREE.Mesh( geometry, material );
 			scene.add( cube2 );
+			var geometry = new THREE.BoxGeometry( 0.9, 1.9, 0.4 );
+			var material =  new THREE.MeshBasicMaterial( { color: 0xffaa00, wireframe: true  }  );
+			var cube4 = new THREE.Mesh( geometry, material );
+			scene.add( cube4 );
 
 			var geometry = new THREE.BoxGeometry( 1, 2, 0.5 );
 			var material =  new THREE.MeshNormalMaterial( { flatshading: true  }  );
@@ -39,6 +43,7 @@
 
 			cube3.position.x = -3;
 			cube2.position.x = 3;
+			cube4.position.x = 3;
 
 			camera.position.z = 5;
 
@@ -49,6 +54,8 @@
 				cube3.rotation.y += 0.01;
 				cube2.rotation.x -= 0.01;
 				cube2.rotation.z += 0.01;
+				cube4.rotation.x -= 0.01;
+				cube4.rotation.z += 0.01;
 				
 				
 

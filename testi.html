@@ -32,13 +32,21 @@
 			var cube2 = new THREE.Mesh( geometry, material );
 			scene.add( cube2 );
 
+			var geometry = new THREE.BoxGeometry( 1, 2, 0.5 );
+			var material =  new THREE.MeshBasicMaterial( { color: 0x1BD8EA  }  );
+			var cube3 = new THREE.Mesh( geometry, material );
+			scene.add( cube3 );
+
+			cube3.position.x = -3;
+			cube2.position.x = 3;
+
 			camera.position.z = 5;
 
 			var animate = function () {
 				requestAnimationFrame( animate );
 
 				cube.rotation.x += 0.01;
-				
+				cube3.rotation.y += 0.01;
 				cube2.rotation.x -= 0.01;
 				cube2.rotation.z += 0.01;
 				

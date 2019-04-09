@@ -33,7 +33,7 @@
 			scene.add( cube2 );
 
 			var geometry = new THREE.BoxGeometry( 1, 2, 0.5 );
-			var material =  new THREE.MeshBasicMaterial( { color: 0x1BD8EA  }  );
+			var material =  new THREE.MeshNormalMaterial( { flatshading: true  }  );
 			var cube3 = new THREE.Mesh( geometry, material );
 			scene.add( cube3 );
 

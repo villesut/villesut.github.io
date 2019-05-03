@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>three.js app</title>
+		<style>
+			body { margin: 0; }
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<div id="container"></div>
+	<body>
+		<script src="js/three.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="js/OBJLoader.js"></script>
+		
+		<script>
+			var scene = new THREE.Scene();
+			scene.background = new THREE.CubeTextureLoader()
+				.setPath('textures/')
+				.load([
+					'b.png',
+					'f.png',
+					'u.png',
+					'd.png',
+					'r.png',
+					'l.png'
+				]);
+
+				
+
+
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			var reflectionCube = new THREE.CubeTextureLoader()
+			.setPath('textures/')
+				.load([
+					'b.png',
+					'f.png',
+					'u.png',
+					'd.png',
+					'r.png',
+					'l.png'
+				]);
+				reflectionCube.format = THREE.RGBFormat;
+
+				var refractionCube = new THREE.CubeTextureLoader()
+			.setPath('textures/')
+				.load([
+					'b.png',
+					'f.png',
+					'u.png',
+					'd.png',
+					'r.png',
+					'l.png'
+				]);
+				refractionCube.mapping = THREE.CubeRefractionMapping;
+				refractionCube.format = THREE.RGBFormat;
+
+				var cubeMaterial3 = new THREE.MeshPhongMaterial({
+					color: 0xff6600,
+					envMap: reflectionCube,
+					combine: THREE.MixOperation,
+					reflectivity: 0.3
+
+				});
+
+				
+
+
+
+				var cubeMaterial2 = new THREE.MeshLambertMaterial( { 
+					color: 0xffee00, 
+					envMap: refractionCube, 
+					refractionRatio: 0.95 } );
+
+				var cubeMaterial1 = new THREE.MeshLambertMaterial( { 
+					color: 0xffffff, 
+					envMap: reflectionCube } );
+
+				var geometry1 = new THREE.BoxGeometry(3,3,3);
+				var cube1 = new THREE.Mesh(geometry1, cubeMaterial3);
+				
+
+				var geometry2 = new THREE.SphereGeometry(3,32,32);
+				var cube2 = new THREE.Mesh(geometry2, cubeMaterial2);
+				
+				
+				var geometry3 = new THREE.BoxGeometry(3,3,3);
+				var cube3 = new THREE.Mesh(geometry3, cubeMaterial1);
+
+				var loader = new THREE.OBJLoader();
+				loader.load('models/test.obj', function(object){
+					object.position.setY(-4);
+					object.scale.set(0.5,0.5,0.5);
+					scene.add(object);
+				});
+
+
+				cube1.position.x = 5;
+				cube2.position.x = 0;
+				cube3.position.x = -5;
+
+				scene.add(cube1);
+				scene.add(cube2);
+				scene.add(cube3);
+
+
+
+
+			//controls
+			var controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+				controls.dampingFactor = 0.25;
+				controls.screenSpacePanning = false;
+				controls.minDistance = 10;
+				controls.maxDistance = 500;
+            //controls end
+
+			var light = new THREE.AmbientLight( 0x404040);
+			scene.add(light);
+			//controls
+		
+			
+			camera.position.z = 5;
+
+			var animate = function () {
+				requestAnimationFrame( animate );
+
+				controls.update();
+				
+				
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+	</body>
+</html>

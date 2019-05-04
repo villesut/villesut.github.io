@@ -77,7 +77,7 @@
 	
 	<scene name="scene_lepuski_" title="lepuski_" onstart="" thumburl="panos/lepuski_.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.000" vlookat="0.000" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/lepuski_.tiles/preview.jpg" />
 
@@ -93,7 +93,7 @@
 			</level>
 		</image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-3.702" atv="20.523" linkedscene="scene_miami_360_aerial_panorama_key_-_8000x4001" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-7.273" atv="42.317" linkedscene="scene_miami_360_aerial_panorama_key_-_8000x4001" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-7.273" atv="42.317" linkedscene="scene_360_panorama_beach_sun_-_8000x4000" />
 
 	</scene>
 	<scene name="scene_miami_360_aerial_panorama_key_-_8000x4001" title="miami 360 aerial panorama key - 8000x4001" onstart="" thumburl="panos/miami_360_aerial_panorama_key_-_8000x4001.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -135,7 +135,7 @@
 				<cube url="panos/360_panorama_beach_sun_-_8000x4000.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-11.361" atv="-1.355" linkedscene="scene_lepuski_" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-11.361" atv="-1.129" linkedscene="scene_lepuski_" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-0.689" atv="-1.151" linkedscene="scene_miami_360_aerial_panorama_key_-_8000x4001" />
 
 	</scene>

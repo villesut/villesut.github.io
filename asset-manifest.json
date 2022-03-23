@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/villesut/villesut.github.io/react-gh-pages/static/css/main.31d6cfe0.css",
-    "main.js": "/villesut/villesut.github.io/react-gh-pages/static/js/main.7dbc90ea.js",
-    "index.html": "/villesut/villesut.github.io/react-gh-pages/index.html",
-    "main.7dbc90ea.js.map": "/villesut/villesut.github.io/react-gh-pages/static/js/main.7dbc90ea.js.map"
+    "main.css": "/react-gh-pages/static/css/main.31d6cfe0.css",
+    "main.js": "/react-gh-pages/static/js/main.7dbc90ea.js",
+    "index.html": "/react-gh-pages/index.html",
+    "main.7dbc90ea.js.map": "/react-gh-pages/static/js/main.7dbc90ea.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",

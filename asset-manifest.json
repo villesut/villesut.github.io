@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.31d6cfe0.css",
-    "main.js": "/react-gh-pages/static/js/main.7dbc90ea.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.7dbc90ea.js.map": "/react-gh-pages/static/js/main.7dbc90ea.js.map"
+    "main.css": "/to-do-list_v1.0/static/css/main.31d6cfe0.css",
+    "main.js": "/to-do-list_v1.0/static/js/main.7dbc90ea.js",
+    "index.html": "/to-do-list_v1.0/index.html",
+    "main.7dbc90ea.js.map": "/to-do-list_v1.0/static/js/main.7dbc90ea.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",

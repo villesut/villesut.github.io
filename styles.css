@@ -414,6 +414,33 @@ form button:hover {
 .toggle-title:hover {
   background-color: #e07b00; /* Darker shade on hover */
 }
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  border: none; /* No border */
+  background-color: #ff8c00; /* Button color */
+  color: white; /* Icon color */
+  border-radius: 50%; /* Round shape */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Pointer cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+#backToTopBtn:hover {
+  background-color: #333; /* Change background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+#backToTopBtn i {
+  display: block; /* Center the icon */
+  line-height: 50px; /* Align icon vertically */
+  text-align: center; /* Center the icon horizontally */
+}
 
 
 

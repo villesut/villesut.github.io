@@ -316,6 +316,12 @@ form button:hover {
   right: 10px;
 }
 
+.swiper-container {
+  cursor: grab; /* Show grabbing cursor */
+}
+.swiper-container:active {
+  cursor: grabbing; /* Change cursor when actively dragging */
+}
 
 
 

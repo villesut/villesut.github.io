@@ -39,8 +39,17 @@ header {
 
 /* Navigation Links */
 .nav-links {
-    display: flex; /* Show links in a row on larger screens */
-    align-items: center; /* Center items vertically */
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    top: 60px; /* Adjust to your header height */
+    right: 0; /* Align to the right */
+    background-color: #333; /* Background color */
+    width: 250px; /* Set a width for the menu */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Enable scrolling if needed */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform: translateX(100%); /* Start off-screen */
 }
 
 .nav-links ul {

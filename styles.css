@@ -386,6 +386,22 @@ form button:hover {
   transition: transform 0.3s ease; /* Smooth rotation */
 }
 
+.toggle-title {
+  cursor: pointer; /* Change cursor to pointer */
+  background-color: #ff8c00; /* Background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border-radius: 20px; /* Rounded edges */
+  display: inline-block; /* Allow padding */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow */
+}
+
+.toggle-title:hover {
+  background-color: #e07b00; /* Darker shade on hover */
+}
+
+
 
 
 

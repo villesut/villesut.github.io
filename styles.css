@@ -39,20 +39,36 @@ header {
 
 /* Navigation Links */
 .nav-links {
-    display: flex; /* Show links on larger screens */
+    display: flex; /* Show links in a row on larger screens */
+    align-items: center; /* Center items vertically */
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Show hamburger icon on smaller screens */
-    }
+.nav-links ul {
+    display: flex; /* Use flex to arrange items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove list styling */
+}
 
+.nav-links ul li {
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-links ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold text */
+}
+
+/* Adjust the mobile display */
+@media (max-width: 768px) {
     .nav-links {
         display: none; /* Hide links by default on small screens */
     }
 
     .nav-links.active {
-        display: block; /* Show links when hamburger is clicked */
+        display: flex; /* Show links when hamburger is clicked */
+        flex-direction: column; /* Stack links vertically */
         position: absolute;
         top: 60px; /* Position below the header */
         right: 0;
@@ -60,18 +76,8 @@ header {
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
-    .nav-links ul {
-        flex-direction: column; /* Stack links vertically */
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .nav-links ul li {
-        margin: 10px 0; /* Add some space between items */
-    }
 }
+
 
 
 /* Mobile Responsive Styles */

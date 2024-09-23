@@ -330,6 +330,10 @@ footer {
   color: white; /* Text color for contrast */
 }
 
+.news_post{
+background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+}
+
 .news-section h2, .news-section p {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
   padding: 20px;

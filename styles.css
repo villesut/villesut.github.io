@@ -206,6 +206,57 @@ footer {
 .nav-links {
   transition: all 0.3s ease;
 }
+/* History Section */
+.history-section, .news-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.history-section h2, .news-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.history-section p, .news-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #333;
+}
 
 
 

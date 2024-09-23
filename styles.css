@@ -202,4 +202,9 @@ footer {
   display: block; /* Ensure the icon is centered inside the button */
 }
 
+.nav-links {
+  transition: all 0.3s ease;
+}
+
+
 

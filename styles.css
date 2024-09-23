@@ -125,7 +125,7 @@ html {
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+
   color: white; /* White text */
   padding: 10px 20px;
   border-radius: 8px;

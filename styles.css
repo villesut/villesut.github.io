@@ -14,22 +14,22 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #333;
-  padding: 1rem;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
-header .logo {
+.logo {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-/* Hamburger Icon */
+/* Hamburger Menu Styles */
 .hamburger {
-  display: none; /* Hidden on large screens */
+  display: none; /* Hidden by default on larger screens */
   font-size: 24px;
   cursor: pointer;
 }
@@ -38,14 +38,28 @@ header .logo {
   color: white;
 }
 
-/* Navigation Menu */
+/* Navigation Links - Hidden by default */
+.nav-links {
+  display: none;
+}
+
+.nav-links.active {
+  display: block; /* Show the nav menu when hamburger is clicked */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .nav-links ul {
   list-style: none;
-  display: flex;
+  padding: 0;
 }
 
 .nav-links ul li {
-  margin-left: 1.5rem;
+  margin: 10px 0;
 }
 
 .nav-links ul li a {
@@ -54,47 +68,23 @@ header .logo {
   font-weight: 600;
 }
 
-/* Mobile Navigation: Hidden by Default */
-.nav-links {
-  display: none; /* Hide the nav links initially */
-}
-
-/* Show the nav menu when toggled */
-.nav-links.active {
-  display: block;
-  position: absolute;
-  top: 60px; /* Adjust based on your header height */
-  right: 0;
-  background-color: #333;
-  width: 200px;
-  padding: 1rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.nav-links ul {
-  display: block;
-  text-align: right;
-}
-
-.nav-links ul li {
-  margin: 1rem 0;
-}
-
-/* Responsive Breakpoint for Mobile */
-@media screen and (max-width: 768px) {
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: block; /* Show hamburger icon on smaller screens */
   }
 
   .nav-links ul {
-    display: none;
-  }
-
-  /* Show menu when the hamburger is clicked */
-  .nav-links.active ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 

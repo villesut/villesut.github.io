@@ -252,23 +252,17 @@ footer {
   transition: all 0.3s ease;
 }
 /* History Section */
-/*https://images.unsplash.com/photo-1525088553748-01d6e210e00b?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D*/
-.history-section, .news-section {
+.history-section {
   padding: 50px;
-  background-color: #f4f4f4;
-  text-align: center;
-    position: relative; /* Position relative for pseudo-element */
-  background: url('https://images.unsplash.com/photo-1525088553748-01d6e210e00b?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; /* Background image */
-    height: 90vh; /* Try increasing this temporarily */
-  display: flex; /* Center content */
-  justify-content: center;
-  align-items: center; /* Center vertically */
-}
+   background: url('https://images.unsplash.com/photo-1525088553748-01d6e210e00b?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; /* Background image */
+ text-align: center;
+  color: white; /* Text color for contrast */
 }
 
-.history-section h2, .news-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.history-section h2, .history-section p {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
 }
 
 .history-section p, .news-section p {

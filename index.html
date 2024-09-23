@@ -139,9 +139,8 @@
     <button class="carousel-control next" onclick="moveSlide(1)">❯</button>
   </div>
 </section>
-
 <!-- Back to Top Button -->
-<button id="backToTopBtn" onclick="scrollToTop()">
+<button id="backToTopBtn">
   <i class="fas fa-arrow-up"></i>
 </button>
 
@@ -152,11 +151,14 @@
 
 <!-- JavaScript for Back to Top and Hamburger Menu -->
 <script>
+
 // Get the button
 let backToTopBtn = document.getElementById("backToTopBtn");
 
-// Show the button when the user scrolls down 20px from the top
-window.onscroll = function() {scrollFunction()};
+// Show the button when the user scrolls down 200px from the top
+window.onscroll = function() {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -167,77 +169,12 @@ function scrollFunction() {
 }
 
 // Scroll to top when the button is clicked
-function scrollToTop() {
+backToTopBtn.addEventListener('click', function() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-}
-
-// Hamburger Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
 });
 
-// Smooth scroll to sections
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-    navMenu.classList.remove('active'); // Close menu after clicking
-  });
-});
-let currentIndex = 0;
 
-function moveSlide(direction) {
-  const slides = document.querySelectorAll('.carousel-item');
-  const totalSlides = slides.length;
-
-  // Update current index
-  currentIndex += direction;
-
-  // Loop around the index
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1; // Go to the last slide
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0; // Go to the first slide
-  }
-
-  // Move the carousel
-  const offset = -currentIndex * 100; // Calculate the offset
-  document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-}
-<script>
-  const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  simulateTouch: true, // Enables mouse dragging
-  grabCursor: true, // Changes cursor to a grabbing hand when hovering over the slider
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-});
-
-</script>
-  <script>
 const toggleButton = document.getElementById('toggle-menu');
 const menuGrid = document.querySelector('.menu-grid'); // Assuming this is your menu container
 
@@ -255,8 +192,6 @@ toggleButton.addEventListener('click', () => {
 
 
 </script>
-
-
 
 
 </body>

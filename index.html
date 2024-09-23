@@ -60,48 +60,50 @@
         <h3>Latte</h3>
         <p>Smooth and creamy, the perfect balance.</p>
       </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=americano" alt="Americano">
-      <h3>Americano</h3>
-      <p>Espresso diluted with hot water for a rich flavor.</p>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Americano" alt="Americano">
+        <h3>Americano</h3>
+        <p>Espresso diluted with hot water for a rich flavor.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Flat+White" alt="Flat White">
+        <h3>Flat White</h3>
+        <p>Velvety microfoam with a strong espresso base.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Mocha" alt="Mocha">
+        <h3>Mocha</h3>
+        <p>A delightful blend of chocolate and coffee.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Macchiato" alt="Macchiato">
+        <h3>Macchiato</h3>
+        <p>Espresso topped with a small amount of froth.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Cold+Brew" alt="Cold Brew">
+        <h3>Cold Brew</h3>
+        <p>Slow-brewed coffee served chilled.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Chai+Latte" alt="Chai Latte">
+        <h3>Chai Latte</h3>
+        <p>Spiced tea with steamed milk for a soothing taste.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Herbal+Tea" alt="Herbal Tea">
+        <h3>Herbal Tea</h3>
+        <p>A refreshing caffeine-free blend of herbs.</p>
+      </div>
     </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=flat-white" alt="Flat White">
-      <h3>Flat White</h3>
-      <p>Velvety microfoam with a strong espresso base.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=mocha" alt="Mocha">
-      <h3>Mocha</h3>
-      <p>A delightful blend of chocolate and coffee.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=macchiato" alt="Macchiato">
-      <h3>Macchiato</h3>
-      <p>Espresso topped with a small amount of froth.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=cold-brew" alt="Cold Brew">
-      <h3>Cold Brew</h3>
-      <p>Slow-brewed coffee served chilled.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=chai-latte" alt="Chai Latte">
-      <h3>Chai Latte</h3>
-      <p>Spiced tea with steamed milk for a soothing taste.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=herbal-tea" alt="Herbal Tea">
-      <h3>Herbal Tea</h3>
-      <p>A refreshing caffeine-free blend of herbs.</p>
-    </div>
-  <!-- Add Pagination -->
+    <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
     <!-- Add Navigation -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
 </section>
+
 
 
 <!-- History Section -->
@@ -196,8 +198,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     navMenu.classList.remove('active'); // Close menu after clicking
   });
 });
-</script>
-<script>
 let currentIndex = 0;
 
 function moveSlide(direction) {
@@ -218,7 +218,6 @@ function moveSlide(direction) {
   const offset = -currentIndex * 100; // Calculate the offset
   document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
 }
-</script>
 <script>
   const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,

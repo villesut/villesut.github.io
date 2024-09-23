@@ -117,5 +117,13 @@
     </footer>
 
     <script src="script.js"></script> <!-- Link to your JavaScript -->
+        <script>
+        const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active'); // Toggle the active class
+});
+    </script>
 </body>
 </html>

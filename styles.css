@@ -40,6 +40,15 @@ header {
 
 .nav-links {
     display: none; /* Hide nav links initially */
+    position: fixed; /* Use fixed positioning */
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    width: 250px; /* Set a fixed width for the menu */
+    background-color: #333; /* Background color */
+    padding: 20px; /* Add padding */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    z-index: 1000; /* Ensure it sits above other elements */
 }
 
 .nav-links.active {

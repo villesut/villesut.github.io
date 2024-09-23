@@ -121,22 +121,24 @@
 <!-- Social Media Section -->
 <section id="social-media" class="social-media-section">
   <h2>Follow Us on Instagram</h2>
-  <div class="carousel" id="carousel">
-    <div class="carousel-inner">
-      <!-- Replace the src attributes with your Instagram image URLs -->
-      <div class="carousel-item active">
-        <img src="https://via.placeholder.com/300?text=Social1" alt="Instagram Post 1">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/300x300/?coffee1" alt="Instagram Post 1">
       </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/300?text=Social1" alt="Instagram Post 2">
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/300x300/?coffee2" alt="Instagram Post 2">
       </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/300?text=Social1" alt="Instagram Post 3">
+      <div class="swiper-slide">
+        <img src="https://source.unsplash.com/300x300/?coffee3" alt="Instagram Post 3">
       </div>
-      <!-- Add more items as needed -->
+      <!-- Add more images as needed -->
     </div>
-    <button class="carousel-control prev" onclick="moveSlide(-1)">❮</button>
-    <button class="carousel-control next" onclick="moveSlide(1)">❯</button>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
 <!-- Back to Top Button -->
@@ -189,7 +191,18 @@ toggleButton.addEventListener('click', () => {
     toggleButton.querySelector('i').style.transform = 'rotate(0deg)'; // Reset rotation
   }
 });
-
+const swiperSocialMedia = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 </script>
 

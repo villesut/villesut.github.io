@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -40,22 +43,23 @@
 <!-- Menu Section -->
 <section id="menu" class="menu-section">
   <h2>Our Menu</h2>
-  <div class="menu-items">
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=Espresso" alt="Espresso">
-      <h3>Espresso</h3>
-      <p>Rich, bold, and aromatic.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=Cappuccino" alt="Cappuccino">
-      <h3>Cappuccino</h3>
-      <p>Classic coffee with steamed milk and foam.</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://via.placeholder.com/200?text=Latte" alt="Latte">
-      <h3>Latte</h3>
-      <p>Smooth and creamy, the perfect balance.</p>
-    </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Espresso" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Rich, bold, and aromatic.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Cappuccino" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Classic coffee with steamed milk and foam.</p>
+      </div>
+      <div class="swiper-slide menu-item">
+        <img src="https://via.placeholder.com/200?text=Latte" alt="Latte">
+        <h3>Latte</h3>
+        <p>Smooth and creamy, the perfect balance.</p>
+      </div>
     <div class="menu-item">
       <img src="https://via.placeholder.com/200?text=americano" alt="Americano">
       <h3>Americano</h3>
@@ -91,6 +95,11 @@
       <h3>Herbal Tea</h3>
       <p>A refreshing caffeine-free blend of herbs.</p>
     </div>
+  <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
 
@@ -210,6 +219,31 @@ function moveSlide(direction) {
   document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
 }
 </script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
 
 
 </body>

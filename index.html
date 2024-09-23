@@ -43,7 +43,10 @@
 <!-- Menu Section -->
 <section id="menu" class="menu-section">
   <h2>Our Menu</h2>
-<button id="toggle-menu" class="toggle-button">Hide Menu</button>
+<button id="toggle-menu" class="toggle-button">
+  <i class="fas fa-angle-down"></i> Hide Menu
+</button>
+
   <div class="menu-grid">
     <div class="menu-item">
       <img src="https://via.placeholder.com/300?text=Espresso" alt="Espresso">
@@ -247,12 +250,13 @@ const menuGrid = document.querySelector('.menu-grid');
 toggleButton.addEventListener('click', () => {
   if (menuGrid.style.display === "none" || menuGrid.style.display === "") {
     menuGrid.style.display = "grid"; // Show the menu
-    toggleButton.textContent = "Hide Menu"; // Change button text
+    toggleButton.innerHTML = '<i class="fas fa-angle-up"></i> Hide Menu'; // Change text and icon
   } else {
     menuGrid.style.display = "none"; // Hide the menu
-    toggleButton.textContent = "Show Menu"; // Change button text
+    toggleButton.innerHTML = '<i class="fas fa-angle-down"></i> Show Menu'; // Change text and icon
   }
 });
+
 </script>
 
 

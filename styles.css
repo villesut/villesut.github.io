@@ -230,6 +230,26 @@ html {
     font-size: 1.1rem; /* Larger font for price */
 }
 
+.menu-title, .menu-subtitle {
+    background-color: white; /* White background */
+    padding: 10px 15px; /* Padding around the text */
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #333; /* Dark text color */
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.menu-title {
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Centered text */
+}
+
+.menu-subtitle {
+    font-size: 1.5rem; /* Slightly smaller size for subtitle */
+    text-align: center; /* Centered text */
+}
+
 
 
 

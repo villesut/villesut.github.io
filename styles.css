@@ -138,12 +138,13 @@ html {
 /* Menu Section */
 .menu-section {
   margin: 20px 0; /* Add margin to separate from other sections */
+  text-align: center;
 }
 
 .menu-header {
   display: flex; /* Use flexbox to align title and button */
   align-items: center; /* Center vertically */
-  justify-content: space-between; /* Space between title and button */
+  justify-content: center; /* Space between title and button */
 }
 
 .menu-header h2 {

@@ -257,5 +257,54 @@ form button:hover {
   background-color: #333;
 }
 
+/* Social Media Section */
+.social-media-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
 
 

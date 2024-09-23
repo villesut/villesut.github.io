@@ -356,22 +356,32 @@ form button:hover {
 }
 
 .toggle-button {
-  margin-bottom: 20px; /* Space below the button */
-  padding: 10px 15px; /* Padding for the button */
-  background-color: transparent; /* Transparent background */
-  color: #ff8c00; /* Button text color */
-  border: 2px solid #ff8c00; /* Solid border */
-  border-radius: 30px; /* Rounded corners */
+  width: 60px; /* Width of the button */
+  height: 60px; /* Height of the button */
+  background-color: #ff8c00; /* Background color */
+  color: white; /* Icon color */
+  border: none; /* No border */
+  border-radius: 50%; /* Fully rounded */
   cursor: pointer; /* Pointer cursor on hover */
-  font-weight: bold; /* Bold text */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  text-transform: uppercase; /* Uppercase text */
+  font-size: 24px; /* Icon size */
+  display: flex; /* Center icon */
+  align-items: center; /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 .toggle-button:hover {
-  background-color: #ff8c00; /* Background color on hover */
-  color: white; /* Text color on hover */
+  background-color: #e07b00; /* Darker shade on hover */
 }
+
+.toggle-button i {
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
+
 
 
 

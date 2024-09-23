@@ -163,7 +163,16 @@ html {
   width: 30%;
   color: #333; /* Darker text color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align text */
 }
+
+.menu-item img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Round corners */
+  margin-bottom: 0.5rem; /* Space between image and text */
+}
+
 
 /* Footer Styles */
 footer {

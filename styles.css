@@ -119,7 +119,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Back to Top Button */
+/* Modern Back to Top Button */
 #backToTopBtn {
   display: none; /* Hidden by default */
   position: fixed;
@@ -129,15 +129,22 @@ footer {
   border: none;
   outline: none;
   background-color: #ff8c00; /* Bright orange background */
-  color: white;
+  color: white; /* White icon */
   cursor: pointer;
   padding: 15px;
-  border-radius: 50px;
-  font-size: 18px;
+  border-radius: 50%; /* Make it a circle */
+  font-size: 24px; /* Icon size */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 #backToTopBtn:hover {
-  background-color: #333; /* Darker color on hover */
+  background-color: #333; /* Change background on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
 }
+
+#backToTopBtn i {
+  display: block; /* Ensure the icon is centered inside the button */
+}
+
 

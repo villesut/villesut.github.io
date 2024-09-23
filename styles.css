@@ -74,9 +74,18 @@ header {
     display: block; /* Show hamburger icon on smaller screens */
   }
 
+  .nav-links {
+    display: none; /* Ensure it's hidden by default */
+  }
+
+  .nav-links.active {
+    display: block; /* Show the nav menu when active */
+  }
+
   .nav-links ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack links vertically */
+    padding: 0; /* Remove extra padding */
   }
 }
 

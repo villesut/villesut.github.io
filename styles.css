@@ -32,29 +32,31 @@ header {
 
 /* Hamburger Menu Styles */
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none; /* Hide by default on larger screens */
+    font-size: 24px;
+    cursor: pointer;
 }
 
+/* Navigation Links */
 .nav-links {
-    display: flex;
+    display: flex; /* Show links on larger screens */
 }
+
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Show hamburger on small screens */
-        font-size: 24px;
-        cursor: pointer;
+        display: block; /* Show hamburger icon on smaller screens */
     }
-    
+
     .nav-links {
-        display: none; /* Hide navigation links on small screens */
+        display: none; /* Hide links by default on small screens */
     }
 
     .nav-links.active {
-        display: block; /* Show nav links when hamburger is clicked */
+        display: block; /* Show links when hamburger is clicked */
         position: absolute;
-        top: 60px; /* Adjust position if needed */
+        top: 60px; /* Position below the header */
         right: 0;
-        background-color: #333; /* Background color */
+        background-color: #333;
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -62,6 +64,12 @@ header {
     .nav-links ul {
         flex-direction: column; /* Stack links vertically */
         padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0; /* Add some space between items */
     }
 }
 

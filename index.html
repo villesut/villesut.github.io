@@ -149,6 +149,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 </script>
+<script>
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
+
+  // Update current index
+  currentIndex += direction;
+
+  // Loop around the index
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1; // Go to the last slide
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0; // Go to the first slide
+  }
+
+  // Move the carousel
+  const offset = -currentIndex * 100; // Calculate the offset
+  document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+}
+</script>
+
 
 </body>
 </html>

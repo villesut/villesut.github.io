@@ -221,27 +221,30 @@ function moveSlide(direction) {
 </script>
 <script>
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  simulateTouch: true, // Enables mouse dragging
+  grabCursor: true, // Changes cursor to a grabbing hand when hovering over the slider
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-    },
-  });
+  },
+});
+
 </script>
 
 

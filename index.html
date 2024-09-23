@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Coffee Shop</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Coffee Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Coffee Shop</h1>
-    </header>
-    <section>
-        <h2>Our Menu</h2>
-        <ul>
-            <li>Espresso</li>
-            <li>Latte</li>
-            <li>Cappuccino</li>
-            <li>Mocha</li>
-        </ul>
-    </section>
-    <footer>
-        <p>Contact us at: info@mycoffeeshop.com</p>
-    </footer>
+  <header>
+    <nav>
+      <div class="logo">Coffee Bliss</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Coffee Bliss</h1>
+      <p>Your daily dose of caffeine in a cozy environment.</p>
+      <a href="#menu" class="btn">See Our Menu</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>Rich, bold, and aromatic.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cappuccino</h3>
+        <p>Classic coffee with steamed milk and foam.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Latte</h3>
+        <p>Smooth and creamy, the perfect balance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>123 Coffee St, Caffeine City</p>
+    <p>Email: contact@coffeebliss.com</p>
+    <p>Phone: (123) 456-7890</p>
+  </section>
+
+  <footer>
+    <p>© 2024 Coffee Bliss. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

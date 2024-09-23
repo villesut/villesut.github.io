@@ -44,8 +44,9 @@
 <section id="menu" class="menu-section">
   <h2>Our Menu</h2>
 <button id="toggle-menu" class="toggle-button">
-  <i class="fas fa-angle-down"></i> Hide Menu
+  <i class="fas fa-angle-down"></i>
 </button>
+
 
   <div class="menu-grid">
     <div class="menu-item">
@@ -245,17 +246,20 @@ function moveSlide(direction) {
 </script>
   <script>
 const toggleButton = document.getElementById('toggle-menu');
-const menuGrid = document.querySelector('.menu-grid');
+const menuGrid = document.querySelector('.menu-grid'); // Assuming this is your menu container
 
 toggleButton.addEventListener('click', () => {
   if (menuGrid.style.display === "none" || menuGrid.style.display === "") {
     menuGrid.style.display = "grid"; // Show the menu
-    toggleButton.innerHTML = '<i class="fas fa-angle-up"></i> Hide Menu'; // Change text and icon
+    toggleButton.innerHTML = '<i class="fas fa-angle-up"></i>'; // Change icon to up
+    toggleButton.querySelector('i').style.transform = 'rotate(180deg)'; // Rotate icon
   } else {
     menuGrid.style.display = "none"; // Hide the menu
-    toggleButton.innerHTML = '<i class="fas fa-angle-down"></i> Show Menu'; // Change text and icon
+    toggleButton.innerHTML = '<i class="fas fa-angle-down"></i>'; // Change icon to down
+    toggleButton.querySelector('i').style.transform = 'rotate(0deg)'; // Reset rotation
   }
 });
+
 
 </script>
 

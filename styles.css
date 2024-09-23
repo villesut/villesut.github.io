@@ -322,6 +322,29 @@ form button:hover {
 .swiper-container:active {
   cursor: grabbing; /* Change cursor when actively dragging */
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* Change this to match your design */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Background for better visibility */
+  border-radius: 50%; /* Make them round */
+  width: 30px; /* Button size */
+  height: 30px; /* Button size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  right: 10px; /* Position from the right */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Position from the left */
+}
+
+.swiper-container {
+  position: relative; /* Make the container position relative */
+}
 
 
 

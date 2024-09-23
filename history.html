@@ -32,5 +32,13 @@
     <footer>
         <p>&copy; 2023 Coffee Bliss</p>
     </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active'); // Toggle the active class
+});
+    </script>
 </body>
 </html>

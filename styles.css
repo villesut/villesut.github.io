@@ -161,18 +161,27 @@ html {
   padding: 20px;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  padding: 20px; /* Padding around the grid */
+}
+
 .menu-item {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 8px;
+  background-color: white; /* Background color for items */
+  padding: 15px; /* Padding inside items */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .menu-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Match item corners */
 }
+
 
 
 

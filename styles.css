@@ -32,44 +32,41 @@ header {
 
 /* Hamburger Menu Styles */
 .hamburger {
-  display: none; /* Hidden by default on larger screens */
-  font-size: 24px;
-  cursor: pointer;
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+    color: white; /* Icon color */
 }
 
-.hamburger i {
-  color: white;
-}
-
-/* Navigation Links - Hidden by default */
 .nav-links {
-  display: none;
+    display: none; /* Hide nav links initially */
 }
 
 .nav-links.active {
-  display: block; /* Show the nav menu when hamburger is clicked */
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: #333;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Show nav links when active */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1000;
 }
 
 .nav-links ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .nav-links ul li {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
-.nav-links ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on smaller screens */
+    }
 }
+
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {

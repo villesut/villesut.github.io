@@ -136,7 +136,12 @@ html {
 }
 
 /* Menu Section */
-.menu-section, .contact-section {
+.menu-section {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between title and button */
+}
+  .contact-section {
   padding: 2rem;
   text-align: center;
   background-color: white; /* White background to distinguish the sections */
@@ -356,20 +361,18 @@ form button:hover {
 }
 
 .toggle-button {
-  width: 60px; /* Width of the button */
-  height: 60px; /* Height of the button */
+  width: 40px; /* Smaller size for the button */
+  height: 40px; /* Smaller size for the button */
   background-color: #ff8c00; /* Background color */
   color: white; /* Icon color */
   border: none; /* No border */
   border-radius: 50%; /* Fully rounded */
   cursor: pointer; /* Pointer cursor on hover */
-  font-size: 24px; /* Icon size */
+  font-size: 16px; /* Adjust icon size */
   display: flex; /* Center icon */
   align-items: center; /* Vertical center */
   justify-content: center; /* Horizontal center */
-  position: fixed; /* Fixed position */
-  bottom: 20px; /* Position from the bottom */
-  right: 20px; /* Position from the right */
+  margin-left: 10px; /* Space between title and button */
   transition: background-color 0.3s ease; /* Smooth transition */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }

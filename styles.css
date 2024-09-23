@@ -56,14 +56,14 @@ header .logo {
 
 /* Mobile Navigation: Hidden by Default */
 .nav-links {
-  display: none;
+  display: none; /* Hide the nav links initially */
 }
 
 /* Show the nav menu when toggled */
 .nav-links.active {
   display: block;
   position: absolute;
-  top: 60px; /* Adjust to your header height */
+  top: 60px; /* Adjust based on your header height */
   right: 0;
   background-color: #333;
   width: 200px;
@@ -95,6 +95,7 @@ header .logo {
     display: block;
   }
 }
+
 
 
 /* Hero Section */

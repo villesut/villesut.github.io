@@ -169,6 +169,9 @@ html {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
+  background-image: url('https://images.unsplash.com/photo-1709094703294-6300ed816d1d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

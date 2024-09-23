@@ -28,10 +28,104 @@
   </nav>
 </header>
 
-<!-- Other sections remain unchanged -->
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Welcome to Coffee Bliss</h1>
+    <p>Your daily dose of caffeine in a cozy environment.</p>
+    <a href="#menu" class="btn">See Our Menu</a>
+  </div>
+</section>
 
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <h3>Espresso</h3>
+      <p>Rich, bold, and aromatic.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Cappuccino</h3>
+      <p>Classic coffee with steamed milk and foam.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Latte</h3>
+      <p>Smooth and creamy, the perfect balance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- History Section -->
+<section id="history" class="history-section">
+  <h2>Our History</h2>
+  <p>Coffee Bliss was founded in 2005 by the passionate and dedicated Smith family. Nestled in the heart of our community, Coffee Bliss began as a small, cozy coffee shop with a simple mission: to bring people together over a perfect cup of coffee. Over the years, it has become a beloved local spot, known for its warm atmosphere, friendly service, and delicious brews. The Smith family has always prioritized quality and community, sourcing the finest beans and creating a welcoming space for everyone. Today, Coffee Bliss continues to thrive, serving as a testament to the family’s hard work, love for coffee, and commitment to their customers.</p>
+</section>
+
+<!-- News Section -->
+<section id="news" class="news-section">
+  <h2>News & Events</h2>
+  <p>Join us for upcoming coffee-tasting events and news about new branches!</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>123 Coffee St, Caffeine City</p>
+  <p>Email: contact@coffeebliss.com</p>
+  <p>Phone: (123) 456-7890</p>
+</section>
+
+<!-- Back to Top Button -->
+<button id="backToTopBtn" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Footer -->
+<footer>
+  <p>© 2024 Coffee Bliss. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for Back to Top and Hamburger Menu -->
 <script>
-// JavaScript code as provided earlier...
+// Get the button
+let backToTopBtn = document.getElementById("backToTopBtn");
+
+// Show the button when the user scrolls down 20px from the top
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    backToTopBtn.style.display = "block"; // Show the button
+  } else {
+    backToTopBtn.style.display = "none"; // Hide the button
+  }
+}
+
+// Scroll to top when the button is clicked
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+// Hamburger Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+// Smooth scroll to sections
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+    navMenu.classList.remove('active'); // Close menu after clicking
+  });
+});
 </script>
 
 </body>

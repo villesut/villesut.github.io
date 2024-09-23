@@ -3,103 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Your Coffee Shop</title>
+  <title>Coffee Bliss</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
-<header>
-  <div class="logo">Coffee Bliss</div>
-  
-  <!-- Hamburger Icon -->
-  <div class="hamburger" id="hamburger">
-    <i class="fas fa-bars"></i>
-  </div>
-  
-  <!-- Navigation Links -->
-  <nav class="nav-links" id="navMenu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Coffee Bliss</h1>
-      <p>Your daily dose of caffeine in a cozy environment.</p>
-      <a href="#menu" class="btn">See Our Menu</a>
+  <header>
+    <div class="logo">Coffee Bliss</div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
     </div>
-  </section>
+    <nav class="nav-links" id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="menu" class="menu-section">
-    <h2>Our Menu</h2>
-    <div class="menu-items">
-      <div class="menu-item">
-        <h3>Espresso</h3>
-        <p>Rich, bold, and aromatic.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Cappuccino</h3>
-        <p>Classic coffee with steamed milk and foam.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Latte</h3>
-        <p>Smooth and creamy, the perfect balance.</p>
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- Main content of your webpage -->
+  </main>
 
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p>123 Coffee St, Caffeine City</p>
-    <p>Email: contact@coffeebliss.com</p>
-    <p>Phone: (123) 456-7890</p>
-  </section>
-<button id="backToTopBtn" onclick="scrollToTop()">
-  <i class="fas fa-arrow-up"></i>
-</button>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
 
-  <footer>
-    <p>© 2024 Coffee Bliss. All rights reserved.</p>
-  </footer>
-
-<script>
-// Get the button
-let backToTopBtn = document.getElementById("backToTopBtn");
-
-// Show the button when the user scrolls down 20px from the top
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    backToTopBtn.style.display = "block"; // Show the button
-  } else {
-    backToTopBtn.style.display = "none"; // Hide the button
-  }
-}
-
-// When the button is clicked, scroll to the top of the document
-function scrollToTop() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-}
-</script>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
-
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-</script>
-
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

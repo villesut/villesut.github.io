@@ -24,52 +24,70 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#menu">Menu</a></li>
+      <li><a href="#history">Our History</a></li>
+      <li><a href="#news">News</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Welcome to Coffee Bliss</h1>
+    <p>Your daily dose of caffeine in a cozy environment.</p>
+    <a href="#menu" class="btn">See Our Menu</a>
+  </div>
+</section>
 
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Coffee Bliss</h1>
-      <p>Your daily dose of caffeine in a cozy environment.</p>
-      <a href="#menu" class="btn">See Our Menu</a>
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <h3>Espresso</h3>
+      <p>Rich, bold, and aromatic.</p>
     </div>
-  </section>
-
-  <section id="menu" class="menu-section">
-    <h2>Our Menu</h2>
-    <div class="menu-items">
-      <div class="menu-item">
-        <h3>Espresso</h3>
-        <p>Rich, bold, and aromatic.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Cappuccino</h3>
-        <p>Classic coffee with steamed milk and foam.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Latte</h3>
-        <p>Smooth and creamy, the perfect balance.</p>
-      </div>
+    <div class="menu-item">
+      <h3>Cappuccino</h3>
+      <p>Classic coffee with steamed milk and foam.</p>
     </div>
-  </section>
+    <div class="menu-item">
+      <h3>Latte</h3>
+      <p>Smooth and creamy, the perfect balance.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p>123 Coffee St, Caffeine City</p>
-    <p>Email: contact@coffeebliss.com</p>
-    <p>Phone: (123) 456-7890</p>
-  </section>
+<!-- History Section -->
+<section id="history" class="history-section">
+  <h2>Our History</h2>
+  <p>Coffee Bliss began as a small family-run café in 2005. With a passion for high-quality coffee and a cozy atmosphere, we've grown to become a community favorite. Over the years, we've expanded our menu and services while staying true to our roots: serving great coffee with a smile.</p>
+</section>
+
+<!-- News Section -->
+<section id="news" class="news-section">
+  <h2>News & Events</h2>
+  <p>Stay tuned for our upcoming coffee-tasting event this November, where you can sample our seasonal blends and meet local artisans. We’re also excited to announce the opening of our new branch in Caffeine City!</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>123 Coffee St, Caffeine City</p>
+  <p>Email: contact@coffeebliss.com</p>
+  <p>Phone: (123) 456-7890</p>
+</section>
+
+<!-- Back to Top Button -->
 <button id="backToTopBtn" onclick="scrollToTop()">
   <i class="fas fa-arrow-up"></i>
 </button>
 
-  <footer>
-    <p>© 2024 Coffee Bliss. All rights reserved.</p>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2024 Coffee Bliss. All rights reserved.</p>
+</footer>
 
 <script>
 // Get the button
@@ -92,6 +110,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
 </script>
+
 <script>
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('navMenu');

@@ -137,22 +137,17 @@ html {
 
 /* Menu Section */
 .menu-section {
-  display: flex; /* Align items in a row */
+  margin: 20px 0; /* Add margin to separate from other sections */
+}
+
+.menu-header {
+  display: flex; /* Use flexbox to align title and button */
   align-items: center; /* Center vertically */
   justify-content: space-between; /* Space between title and button */
 }
-  .contact-section {
-  padding: 2rem;
-  text-align: center;
-  background-color: white; /* White background to distinguish the sections */
-  margin: 2rem auto;
-  max-width: 800px;
-  border-radius: 8px;
-}
 
-.menu-section h2, .contact-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.menu-header h2 {
+  margin: 0; /* Remove default margin */
 }
 
 .menu-items {
@@ -188,6 +183,14 @@ html {
 }
 
 
+  .contact-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: white; /* White background to distinguish the sections */
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
 
 
 /* Footer Styles */
@@ -359,22 +362,19 @@ form button:hover {
 .swiper-container {
   position: relative; /* Make the container position relative */
 }
-
 .toggle-button {
-  width: 40px; /* Smaller size for the button */
-  height: 40px; /* Smaller size for the button */
+  width: 40px; /* Button size */
+  height: 40px; /* Button size */
   background-color: #ff8c00; /* Background color */
   color: white; /* Icon color */
   border: none; /* No border */
   border-radius: 50%; /* Fully rounded */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Adjust icon size */
+  cursor: pointer; /* Pointer cursor */
   display: flex; /* Center icon */
-  align-items: center; /* Vertical center */
-  justify-content: center; /* Horizontal center */
-  margin-left: 10px; /* Space between title and button */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
   transition: background-color 0.3s ease; /* Smooth transition */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow */
 }
 
 .toggle-button:hover {

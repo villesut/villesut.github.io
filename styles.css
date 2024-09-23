@@ -265,9 +265,23 @@ footer {
   border-radius: 8px; /* Rounded corners */
 }
 
-.history-section p, .news-section p {
+.history-section p {
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+/* News and Events Section */
+.news-section {
+  padding: 50px;
+  background: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover; /* Background image */
+  text-align: center;
+  color: white; /* Text color for contrast */
+}
+
+.news-section h2, .news-section p {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
 }
 
 /* Contact Form */

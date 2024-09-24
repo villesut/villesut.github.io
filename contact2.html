@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | Coffee Bliss</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="sticky-header">
+    <div class="navbar">
+        <div class="logo">Coffee Bliss</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Font Awesome bars icon -->
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">OLD UI HOME</a></li>
+              <li><a href="index2.html">Home</a></li>
+                <li><a href="history2.html">Our History</a></li>
+                <li><a href="menu2.html">Our Menu</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <h2 class="menu-title">Contact Us</h2>
+    <p>We would love to hear from you! Please fill out the form below or reach out to us through the details provided.</p>
+
+    <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <h3>Our Location</h3>
+        <p>123 Coffee Lane, Brew City, CA 90001</p>
+
+        <h3>Phone</h3>
+        <p>(123) 456-7890</p>
+
+        <h3>Follow Us</h3>
+        <div class="social-media-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Coffee Bliss. All rights reserved.</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- JavaScript for Back to Top and Hamburger Menu -->
+<script>
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    backToTopBtn.addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+
+    // Toggle Menu for Mobile
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    window.onscroll = function() {
+        const header = document.querySelector('.sticky-header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    };
+</script>
+
+</body>
+</html>

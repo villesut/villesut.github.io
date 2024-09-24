@@ -6,6 +6,16 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Hero Section */
+.hero {
+  position: relative; /* Position relative for pseudo-element */
+  background: url('https://images.unsplash.com/photo-1493857671505-72967e2e2760?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; /* Background image */
+    height: 90vh; /* Try increasing this temporarily */
+  display: flex; /* Center content */
+  justify-content: center;
+  align-items: center; /* Center vertically */
+}
+
 /* Sticky Header */
 .sticky-header {
     position: sticky;
@@ -96,9 +106,15 @@
 
 /* Menu Section */
 .menu-section {
-    max-width: 1200px;
+    padding: 2rem;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+  background-image: url('https://images.unsplash.com/photo-1709094703294-6300ed816d1d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-title {
@@ -134,6 +150,22 @@
 
 .menu-item:hover {
     transform: scale(1.05);
+}
+
+/* News and Events Section */
+.news-section {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 50px;
+  background: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover; /* Background image */
+  text-align: center;
+  color: white; /* Text color for contrast */
+}
+
+
+.news-section h2, .news-section p {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
 }
 
 .menu

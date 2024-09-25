@@ -390,6 +390,55 @@ footer {
   margin-bottom: 40px;
 }
 
+/* General container for sections */
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Restricts the width */
+    text-align: center;
+}
+
+/* Specific to News and Events section */
+.news-events {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* For uniform centering of all sections */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Back to top button styling */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f60;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+
+#backToTopBtn i {
+    font-size: 18px;
+}
+
+
 .history-section h2, .history-section p {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
   padding: 20px;
